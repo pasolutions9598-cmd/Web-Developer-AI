@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0f14">
+<meta name="description" content="Professional Web & UI/UX Designer in Prayagraj — high-converting websites and digital experiences for businesses.">
+<title>Web Designer | Web & UI/UX Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#f4f7fb;--paper:#fff;--ink:#101722;--muted:#657080;--line:#dfe5ed;
+ --blue:#2457ff;--blue2:#6b7cff;--cyan:#19b6c9;--navy:#0b0f14;
+ --shadow:0 24px 70px rgba(25,39,65,.13);--r:24px
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,calc(100% - 36px));margin:auto}
+.nav{height:76px;background:rgba(244,247,251,.83);backdrop-filter:blur(18px);border-bottom:1px solid rgba(16,23,34,.07);position:sticky;top:0;z-index:30}
+.navin{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;font-family:Manrope;font-weight:800}
+.brandmark{width:38px;height:38px;border-radius:12px;background:#111a27;color:#fff;display:grid;place-items:center;overflow:hidden}
+.brandmark img{width:100%;height:100%;object-fit:cover}
+.brand small{display:block;color:#788394;font:500 9px "DM Sans";letter-spacing:1.4px;text-transform:uppercase}
+.navlinks{display:flex;gap:28px;font-size:13px;font-weight:700;color:#465264}
+.navlinks a:hover{color:var(--blue)}
+.navbtn{padding:11px 17px;border-radius:12px;background:var(--ink);color:#fff;font-weight:700;font-size:13px}
+.hero{min-height:calc(100vh - 76px);display:grid;align-items:center;padding:78px 0;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);pointer-events:none}
+.hero:before{width:520px;height:520px;background:radial-gradient(circle,rgba(36,87,255,.16),transparent 68%);right:-140px;top:-140px}
+.hero:after{width:460px;height:460px;background:radial-gradient(circle,rgba(25,182,201,.12),transparent 70%);left:-220px;bottom:-220px}
+.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:75px;align-items:center;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--blue);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px}
+.eyebrow i{width:24px;height:2px;background:var(--blue);display:block}
+h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.06}
+h1{font-size:clamp(48px,7vw,82px);letter-spacing:-3.7px;max-width:800px}
+.grad{background:linear-gradient(100deg,#101722 5%,#2457ff 62%,#18aeba);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:17px;color:var(--muted);max-width:650px;margin:24px 0 30px}
+.actions{display:flex;flex-wrap:wrap;gap:11px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 19px;border-radius:13px;border:1px solid var(--line);font-size:13px;font-weight:800;transition:.3s}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:white;box-shadow:0 13px 30px rgba(36,87,255,.23)}
+.btn.light{background:#fff}
+.btn:hover{transform:translateY(-3px);box-shadow:0 15px 30px rgba(25,39,65,.12)}
+.visual{position:relative}
+.device{background:#111722;border-radius:30px;padding:10px;box-shadow:0 30px 80px rgba(10,19,34,.25);transform:rotate(1.5deg);transition:.5s}
+.device:hover{transform:rotate(0) translateY(-8px)}
+.screen{background:#f7f9fc;border-radius:22px;overflow:hidden;min-height:465px;position:relative}
+.screenTop{height:42px;background:#e9edf4;display:flex;align-items:center;gap:6px;padding:0 15px}
+.dot{width:7px;height:7px;border-radius:50%;background:#b9c3d0}
+.mock{padding:28px}
+.mockbar{height:12px;width:35%;background:#cfd7e4;border-radius:9px;margin-bottom:28px}
+.mocktitle{height:38px;width:83%;background:#192435;border-radius:9px;margin-bottom:10px}
+.mocktitle2{height:38px;width:61%;background:#2e63ff;border-radius:9px;margin-bottom:28px}
+.mockgrid{display:grid;grid-template-columns:1.4fr .8fr;gap:12px}
+.mockbox{height:155px;border-radius:18px;background:#e6ebf3}
+.mockbox:nth-child(2){background:linear-gradient(145deg,#dfe7ff,#bfcaff)}
+.mockbox:nth-child(3){height:92px;grid-column:1/-1;background:#dbe8e9}
+.floatCard{position:absolute;left:-35px;bottom:35px;background:#fff;border:1px solid var(--line);border-radius:17px;padding:14px 17px;box-shadow:var(--shadow);font-size:12px;font-weight:700}
+.floatCard b{display:block;font:800 21px Manrope;color:var(--blue)}
+.ticker{background:#0f1620;color:#dce5f1;border-block:1px solid #1f2a39;overflow:hidden}
+.tickerIn{display:flex;justify-content:center;gap:38px;flex-wrap:wrap;padding:15px 0;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:800}
+section{padding:96px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}
+.head h2{font-size:clamp(34px,5vw,54px);letter-spacing:-2px}
+.head p{max-width:490px;color:var(--muted)}
+.services{background:#fff}
+.serviceGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service{padding:27px;border:1px solid var(--line);border-radius:22px;background:#fff;min-height:205px;transition:.35s;position:relative;overflow:hidden}
+.service:after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;right:-65px;top:-65px;background:rgba(36,87,255,.07)}
+.service:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+.icon{width:42px;height:42px;border-radius:13px;background:#edf2ff;color:var(--blue);display:grid;place-items:center;font-weight:900;margin-bottom:24px}
+.service h3{font-size:21px;margin-bottom:8px}
+.service p{color:var(--muted);font-size:13px}
+.process{background:#101722;color:#fff}
+.process .head p{color:#9ca8b7}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#2a3442;border:1px solid #2a3442;border-radius:22px;overflow:hidden}
+.step{background:#101722;padding:27px;min-height:225px;transition:.3s}
+.step:hover{background:#151e2a}
+.num{font:800 13px Manrope;color:#6d83ff;margin-bottom:48px}
+.step h3{font-size:21px;margin-bottom:9px}
+.step p{font-size:13px;color:#9ca8b7}
+.about{background:#f0f4f9}
+.aboutGrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}
+.aboutImage{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:#111}
+.aboutImage img{display:block;width:100%;height:260px;object-fit:cover}
+.aboutCopy p{color:var(--muted);margin:17px 0}
+.aboutList{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.aboutList div{background:#fff;border:1px solid var(--line);padding:12px 13px;border-radius:12px;font-size:12px;font-weight:700}
+.portfolio{background:#fff}
+.workGrid{display:grid;grid-template-columns:1.35fr .65fr;grid-template-rows:220px 220px;gap:16px}
+.work{border-radius:23px;overflow:hidden;position:relative;border:1px solid var(--line);background:#121a25}
+.work.big{grid-row:span 2;background:linear-gradient(135deg,#0f1a2b,#345cff)}
+.work.small1{background:linear-gradient(135deg,#e9efff,#cbd6ff)}
+.work.small2{background:linear-gradient(135deg,#dff4f3,#b6e3df)}
+.work .label{position:absolute;left:22px;bottom:20px;font-weight:800}
+.work.big .label{color:#fff;font-size:28px;font-family:Manrope}
+.work.small1 .label,.work.small2 .label{color:#172033}
+.contact{background:linear-gradient(120deg,#2457ff,#1736aa);color:#fff}
+.contactGrid{display:grid;grid-template-columns:1fr .8fr;gap:60px;align-items:center}
+.contact h2{font-size:clamp(38px,5vw,60px);letter-spacing:-2px}
+.contact p{color:#d8e2ff;max-width:600px;margin:18px 0 25px}
+.contact .btn{background:#fff;color:#172033;border-color:#fff}
+.contactInfo{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:24px;border-radius:22px}
+.contactInfo div{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.13);font-size:13px}
+.contactInfo div:last-child{border:0}
+.contactInfo span{display:block;color:#b9c8ff;font-size:10px;text-transform:uppercase;letter-spacing:1.4px;font-weight:800}
+footer{background:#0b0f14;color:#9da8b5;padding:30px 0}
+.foot{display:flex;justify-content:space-between;gap:20px;font-size:12px}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s ease}
+.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){
+ .heroGrid,.aboutGrid,.contactGrid{grid-template-columns:1fr}
+ .hero{padding:65px 0}.device{max-width:650px;margin:auto}
+ .serviceGrid{grid-template-columns:repeat(2,1fr)}
+ .steps{grid-template-columns:repeat(2,1fr)}
+ .navlinks{display:none}
+}
+@media(max-width:600px){
+ .container{width:calc(100% - 24px)}
+ h1{font-size:51px;letter-spacing:-2.5px}
+ section{padding:67px 0}
+ .serviceGrid,.steps{grid-template-columns:1fr}
+ .workGrid{grid-template-columns:1fr;grid-template-rows:210px 160px 160px}
+ .work.big{grid-row:auto}
+ .floatCard{left:10px;bottom:20px}
+ .aboutList{grid-template-columns:1fr}
+ .head{display:block}.head p{margin-top:13px}
+ .foot{display:block}.foot p{margin-top:8px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+ <div class="container navin">
+  <a href="#top" class="brand">
+   <span class="brandmark"><img src="profile-mark.jpg" alt="Web Designer profile mark"></span>
+   <span>Web Designer<small>Web · UI/UX · Digital</small></span>
+  </a>
+  <div class="navlinks"><a href="#services">Services</a><a href="#process">Process</a><a href="#work">Portfolio</a><a href="#contact">Contact</a></div>
+  <a href="#contact" class="navbtn">Start a project</a>
+ </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+ <div class="container heroGrid">
+  <div class="reveal">
+   <div class="eyebrow"><i></i> Professional Web & UI/UX Designer</div>
+   <h1>Websites that make your <span class="grad">business look ready.</span></h1>
+   <p>High-converting websites for businesses, backed by thoughtful UI/UX and a stronger digital presence. From the first layout to the final responsive experience, every screen is built to communicate clearly.</p>
+   <div class="actions">
+    <a class="btn primary" href="#contact">Design my website →</a>
+    <a class="btn light" href="#work">View portfolio</a>
+   </div>
+  </div>
+  <div class="visual reveal">
+   <div class="device">
+    <div class="screen">
+     <div class="screenTop"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+     <div class="mock">
+      <div class="mockbar"></div><div class="mocktitle"></div><div class="mocktitle2"></div>
+      <div class="mockgrid"><div class="mockbox"></div><div class="mockbox"></div><div class="mockbox"></div></div>
+     </div>
+    </div>
+   </div>
+   <div class="floatCard"><b>100%</b> responsive-first thinking</div>
+  </div>
+ </div>
+</section>
+
+<div class="ticker"><div class="container tickerIn"><span>Web Design</span><span>UI/UX Design</span><span>Business Websites</span><span>Responsive Design</span><span>Digital Presence</span></div></div>
+
+<section id="services" class="services">
+ <div class="container">
+  <div class="head reveal"><div><div class="eyebrow"><i></i> What I do</div><h2>Design built around business.</h2></div><p>Clear design, purposeful structure and responsive execution — focused on what a business actually needs from its website.</p></div>
+  <div class="serviceGrid">
+   <article class="service reveal"><div class="icon">01</div><h3>Website Design</h3><p>Professional, modern websites designed around your business, audience and goals.</p></article>
+   <article class="service reveal"><div class="icon">02</div><h3>UI/UX Design</h3><p>Clean interfaces and user journeys that make information easier to understand and use.</p></article>
+   <article class="service reveal"><div class="icon">03</div><h3>High-Converting Websites</h3><p>Focused layouts, strong hierarchy and clear calls-to-action designed to turn attention into enquiries.</p></article>
+   <article class="service reveal"><div class="icon">04</div><h3>Responsive Design</h3><p>Layouts that adapt smoothly across desktop, laptop, tablet and mobile screens.</p></article>
+   <article class="service reveal"><div class="icon">05</div><h3>Digital Presence</h3><p>A stronger online presentation that helps your business look credible and professional.</p></article>
+   <article class="service reveal"><div class="icon">06</div><h3>Free Consultation</h3><p>DM “DESIGN” for a free consultation and a practical starting point for your project.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="process" class="process">
+ <div class="container">
+  <div class="head reveal"><div><div class="eyebrow" style="color:#7f95ff"><i style="background:#7f95ff"></i> How it works</div><h2>Simple. Strategic. Built to ship.</h2></div><p>Four focused stages keep the project clear without adding unnecessary complexity.</p></div>
+  <div class="steps">
+   <article class="step reveal"><div class="num">01 / DISCOVER</div><h3>Understand</h3><p>Business, audience, offer and the outcome the website needs to support.</p></article>
+   <article class="step reveal"><div class="num">02 / DEFINE</div><h3>Structure</h3><p>Plan the page hierarchy, content flow and calls-to-action before visual polish.</p></article>
+   <article class="step reveal"><div class="num">03 / DESIGN</div><h3>Create</h3><p>Develop the visual system, UI and responsive experience around the brand.</p></article>
+   <article class="step reveal"><div class="num">04 / DELIVER</div><h3>Launch</h3><p>Refine the details, check responsive behaviour and prepare the finished website.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="about">
+ <div class="container aboutGrid">
+  <div class="aboutImage reveal"><img src="dashboard-banner.jpg" alt="Professional dashboard banner supplied by the designer"></div>
+  <div class="aboutCopy reveal">
+   <div class="eyebrow"><i></i> Why work together</div>
+   <h2>A professional website should feel like an extension of your business.</h2>
+   <p>The goal is not to add more sections, effects or decoration. The goal is to make the right information easier to find — while giving your brand a polished, trustworthy digital presence.</p>
+   <div class="aboutList">
+    <div>✓ Business-focused layouts</div><div>✓ Clean visual hierarchy</div>
+    <div>✓ Mobile-first responsiveness</div><div>✓ Modern UI/UX thinking</div>
+    <div>✓ Clear calls-to-action</div><div>✓ Smooth interactions</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="work" class="portfolio">
+ <div class="container">
+  <div class="head reveal"><div><div class="eyebrow"><i></i> Portfolio</div><h2>Selected design directions.</h2></div><p>A visual snapshot of the kinds of digital experiences this profile is positioned to create for businesses.</p></div>
+  <div class="workGrid">
+   <div class="work big reveal"><div class="label">Business Website<br>Experience</div></div>
+   <div class="work small1 reveal"><div class="label">UI / UX<br>Interfaces</div></div>
+   <div class="work small2 reveal"><div class="label">Digital<br>Presence</div></div>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="container contactGrid">
+  <div class="reveal">
+   <div class="eyebrow" style="color:#dbe4ff"><i style="background:#dbe4ff"></i> Start a conversation</div>
+   <h2>Have a business that needs a better website?</h2>
+   <p>DM “DESIGN” for a free consultation. Based in Prayagraj, Allahabad, India.</p>
+   <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener">DM “DESIGN” on Instagram ↗</a>
+  </div>
+  <div class="contactInfo reveal">
+   <div><span>Profile</span>Web Designer</div>
+   <div><span>Speciality</span>Professional Web & UI/UX Design</div>
+   <div><span>Focus</span>High-converting websites for businesses</div>
+   <div><span>Location</span>Prayagraj, Allahabad, India · 211003</div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="container foot"><div>© <span id="year"></span> Web Designer</div><p>Professional Web & UI/UX Design · Prayagraj</p></div></footer>
+
+<script>
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(x=>io.observe(x));
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
